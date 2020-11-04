@@ -126,10 +126,10 @@ CVX也支持集合成员关系约束，详情查阅下面的 *Set membership*。
 
 基本函数中的一个例子就是二次线性函数 `` quad_over_lin `` ：
 $$
-f: \mathbf{R}^{n} \times \mathbf{R} \rightarrow \mathbf{R}, \quad f(x, y)=\left\\{\begin{array}{ll}
+f: \mathbf{R}^{n} \times \mathbf{R} \rightarrow \mathbf{R}, \quad f(x, y)=\left\\{\\begin{array}{ll}
 x^{T} x / y & y>0 \\\
 +\infty & y \leq 0
-\end{array}\right.
+\\end{array}\right.
 $$
 （该函数也接受复数 $ x $ ，但是为了简单这里只考虑实数 $ x $ ）。二次线性函数在 $ x $ 和 $ y $ 上都是都是凸函数，而且可以被当做目标函数，或者用在合适的约束中，或者用在更复杂的表达式中。举例说明，我们可以最小化二次线性函数 $ (Ax-b,c^Tx+d) $ 中，
 
