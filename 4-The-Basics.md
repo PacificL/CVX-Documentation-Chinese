@@ -114,7 +114,7 @@ CVX支持一下的约束类型：
 
 严格不等式约束 `` < `` 和 `` > `` 也可以使用，但它们的解释与非严格对应的解释相同。强烈建议不要使用严格约束，之后版本的CVX可能会将其一起移出，其背后的原因请查阅更详细的讨论 *Srtict inequalities*。
 
-不等式和等式约束以元素方式使用，与MATLAB本身的行为匹配。举例说明，如果如果 `` A `` 和 `` B `` 都是 $ m\times n $ 的数组，则 `` A<=B `` 可以被解释为 $ mn $ 个（标量）不等式 `` A(i,j)<=B(i,j)​ `` 。当其中一边为标量时，该标量值要复制的，举个例子， `` A>0 `` 被解释为 `` A(i,j)>=0 `` 。
+不等式和等式约束以元素方式使用，与MATLAB本身的行为匹配。举例说明，如果如果 `` A `` 和 `` B `` 都是 $ m\times n $ 的数组，则 `` A<=B `` 可以被解释为 $ mn $ 个（标量）不等式 `` A(i,j)<=B(i,j) `` 。当其中一边为标量时，该标量值要复制的，举个例子， `` A>0 `` 被解释为 `` A(i,j)>=0 `` 。
 
 这种元素形式的处理方式可以用 *semidefinite programming mode* 来替换，详情查阅对应章节。
 
@@ -126,7 +126,7 @@ CVX也支持集合成员关系约束，详情查阅下面的 *Set membership*。
 
 基本函数中的一个例子就是二次线性函数 `` quad_over_lin `` ：
 $$
-f: \mathbf{R}^{n} \times \mathbf{R} \rightarrow \mathbf{R}, \quad f(x, y)=\left\{\begin{array}{ll}
+f: \mathbf{R}^{n} \times \mathbf{R} \rightarrow \mathbf{R}, \quad f(x, y)=\left{\begin{array}{ll}
 x^{T} x / y & y>0 \\
 +\infty & y \leq 0
 \end{array}\right.
