@@ -127,7 +127,7 @@ CVX也支持集合成员关系约束，详情查阅下面的 *Set membership*。
 基本函数中的一个例子就是二次线性函数 `` quad_over_lin `` ：
 $$
 f: \mathbf{R}^{n} \times \mathbf{R} \rightarrow \mathbf{R}, \quad f(x, y)=\left\\{\begin{array}{ll}
-x^{T} x / y & y>0 \\
+x^{T} x / y & y>0 \\\
 +\infty & y \leq 0
 \end{array}\right.
 $$
